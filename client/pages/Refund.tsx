@@ -56,6 +56,11 @@ export default function Refund() {
               
               <h2 className="text-2xl font-bold mt-8 mb-4">7. Contact Us</h2>
               <p>If you have any questions about our refund policy, please contact us at <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a>.</p>
+              <div className="mt-4 space-y-1">
+                <p>📍 NumeroMobile, 4th Floor, Tower A1, Spaze iTech Park, 417, Sector 49, Gurugram, Haryana 122018</p>
+                <p>📞 <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a></p>
+                <p>📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
+              </div>
             </div>
             
             <div className="mt-8 pt-8 border-t border-white/20">

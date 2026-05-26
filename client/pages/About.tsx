@@ -45,6 +45,12 @@ export default function About() {
               <p className="text-xl text-white font-semibold text-center pt-4">
                 Join the Cook movement today — and let's cook, taste, and grow together.
               </p>
+
+              <div className="border-t border-white/20 pt-6 mt-6 space-y-2 text-white/70 text-sm">
+                <p>📍 NumeroMobile, 4th Floor, Tower A1, Spaze iTech Park, 417, Sector 49, Gurugram, Haryana 122018</p>
+                <p>📞 <a href="tel:+919217523567" className="hover:text-yellow-500">+91 9217523567</a></p>
+                <p>📧 <a href="mailto:bd@numeromobile.com" className="hover:text-yellow-500">bd@numeromobile.com</a></p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-4 gap-6 mt-12">
