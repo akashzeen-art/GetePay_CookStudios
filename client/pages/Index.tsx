@@ -237,26 +237,24 @@ export default function Index() {
                 ))}
               </div>
 
-              {/* Mobile: 2 rows x 10 cols horizontal scroll */}
-              <div className="sm:hidden overflow-x-auto pb-3">
-                <div style={{ display: "grid", gridTemplateRows: "repeat(2, auto)", gridAutoFlow: "column", gridAutoColumns: "44vw", gap: "12px" }}>
-                  {newVideos.map((video) => (
-                    <div
-                      key={video.id}
-                      onClick={() => openVideo(video.url, video.title)}
-                      className="cursor-pointer group rounded-xl overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md"
-                    >
-                      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                        <img
-                          src={`/NewLandscape/${video.id}.png`}
-                          alt={video.title}
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
-                      </div>
-                      <p className="text-white/90 text-xs font-medium px-2 py-1.5 line-clamp-2 leading-snug">{video.title}</p>
+              {/* Mobile: 2 cols x 10 rows normal grid */}
+              <div className="sm:hidden grid grid-cols-2 gap-3">
+                {newVideos.map((video) => (
+                  <div
+                    key={video.id}
+                    onClick={() => openVideo(video.url, video.title)}
+                    className="cursor-pointer group rounded-xl overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md"
+                  >
+                    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                      <img
+                        src={`/NewLandscape/${video.id}.png`}
+                        alt={video.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
                     </div>
-                  ))}
-                </div>
+                    <p className="text-white/90 text-xs font-medium px-2 py-1.5 line-clamp-2 leading-snug">{video.title}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
